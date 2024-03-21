@@ -1,0 +1,29 @@
+.Countries{
+  height: 600px;
+  display: flex;
+  align-items: center;
+  .container{
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 30px;
+    h1{
+      text-align: center;
+    }
+    a{
+      width: 100%;
+      border-radius: 15px;
+      padding: 20px 50px;
+      color: #000000;
+      &:hover{
+        background-color: #BFAFF2;
+      }
+    }
+  }
+}

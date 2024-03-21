@@ -1,0 +1,38 @@
+.Country{
+  height: 600px;
+  display: flex;
+  align-items: center;
+  .container{
+    border-radius: 15px;
+    height: 446px;
+    background-color: white;
+    width: 100%;
+    padding: 50px;
+    h1{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .info{
+      display: flex;
+      gap: 100px;
+      align-items: center;
+      justify-content: space-around;
+      .infoCountry{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 852px){
+  .Country{
+    .container{
+      overflow-y: scroll;
+      .info{
+        flex-direction: column;
+      }
+    }
+  }
+}

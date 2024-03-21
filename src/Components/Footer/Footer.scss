@@ -1,0 +1,160 @@
+.Footer{
+  height: 210px;
+  hr{
+    width: 76%;
+    color: #FFFFFF;
+    opacity: 20%;
+    margin: 0 auto;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 20px;
+    .left{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      width: 584px;
+      height: 110px;
+      justify-content: space-between;
+      .top{
+        ul{
+          li{
+            a{
+              font-size: 24px;
+              color: #FFFFFF;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .bottom{
+        ul{
+          display: flex;
+          justify-content: space-between;
+          li{
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+    .right{
+      height: 97px;
+      width: 501px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p{
+        font-size: 18px;
+        font-weight: 400;
+        color: #FFFFFF;
+      }
+      .email{
+        display: flex;
+        justify-content: space-between;
+        input{
+          background-color: #333333;
+          width: 301px;
+          height: 50px;
+          font-size: 18px;
+          font-weight: 400;
+          border-radius: 15px;
+          border: none;
+          padding: 20px;
+        }
+        button{
+          width: 175px;
+          height: 50px;
+          border-radius: 15px;
+          border: none;
+          background-color: #BFAFF2;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .containerSmall{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px){
+  .Footer{
+    .container{
+      display: none;
+    }
+    .containerSmall{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      .top{
+        margin-bottom: 20px;
+        ul{
+          li{
+            a{
+              font-size: 24px;
+              color: #FFFFFF;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .middle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+        p{
+          font-size: 18px;
+          font-weight: 400;
+          color: #FFFFFF;
+        }
+        .email{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          gap: 20px;
+          input{
+            background-color: #333333;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 15px;
+            border: none;
+            padding: 20px;
+          }
+          button{
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            background-color: #BFAFF2;
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+      .bottom{
+        ul{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 20px;
+          li{
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
