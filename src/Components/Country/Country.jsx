@@ -31,6 +31,15 @@ export default function Country() {
     dipatch(getCountries())
   }, [countries.search])
   
+  if(countries.isPending){
+    return(
+      <div className="Countries">
+        <div className="container">
+          <h1>Pending...</h1>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>
@@ -46,7 +55,7 @@ export default function Country() {
                 <div className="info">
                   <div className="flag">
                     <img src={country.flags.png} alt={country.flags.alt} />
-                    <p><b>{country.capital}</b> is the capital city of <b>{country.name.common}</b></p>
+                    <p><b>{country.capital}</b> is the capital city of <b>{country.name.common}:</b></p>
                   </div>
                   <div className="infoCountry">
                     {
