@@ -22,8 +22,10 @@ export const countriesSlice = createSlice({
   reducers:{
     searchCountry(state, action){
       state.search = action.payload.country
+      // state.filtered = state.data.filter(country => 
+      //   country.name.common.toLowerCase().includes(state.search.toLowerCase())) //The countries in which that text exists․
       state.filtered = state.data.filter(country => 
-        country.name.common.toLowerCase().includes(state.search.toLowerCase()))
+        country.name.common.toLowerCase().startsWith(state.search.toLowerCase())) //The countries that start with that text.
     },
     resetInput(state){
       state.search = ""

@@ -211,8 +211,8 @@ export default function Country() {
 //                     {
 //                       country.currencies && <p><b>Currencies:</b> 
 //                       {
-//                         Object.values(country.currencies).map((currencie, index) => (
-//                         <span key={index}> {currencie.symbol}{currencie.name}  </span>
+//                         Object.values(country.currencies).map((currency, index) => (
+//                         <span key={index}> {currency.symbol}{currency.name}  </span>
 //                         ))
 //                       }
 //                     </p>

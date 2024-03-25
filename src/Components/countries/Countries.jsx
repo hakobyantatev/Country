@@ -37,10 +37,10 @@ export default function Countries() {
       <div className="container">
         {
           countries.filtered.length > 0 ?
-          countries.filtered.map(countrie => {
+          countries.filtered.map(country => {
             return(
-              <Link onClick={handleClick} to={`/country/${countrie.name?.common}`} key={countrie.name?.common} >
-                {countrie.name?.common}
+              <Link onClick={handleClick} to={`/country/${country.name?.common}`} key={country.name?.common} >
+                {country.name?.common}
               </Link>
             )
           })
